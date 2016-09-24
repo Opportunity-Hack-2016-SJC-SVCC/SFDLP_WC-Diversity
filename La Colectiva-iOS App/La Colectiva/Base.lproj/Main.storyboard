@@ -183,6 +183,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ICe-JE-LlH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="dMv-F0-MRb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -219,7 +220,7 @@
         <!--Events-->
         <scene sceneID="Him-1t-gss">
             <objects>
-                <viewController title="Events" id="G58-Yl-hqB" sceneMemberID="viewController">
+                <viewController title="Events" id="G58-Yl-hqB" customClass="EventsViewController" customModule="La_Colectiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V2p-bg-DDD"/>
                         <viewControllerLayoutGuide type="bottom" id="kDn-dd-qRs"/>
@@ -227,9 +228,33 @@
                     <view key="view" contentMode="scaleToFill" id="7eU-jK-fo7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-he-TZQ">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fmm-NF-ZCf">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmm-NF-ZCf" id="3ef-jI-trb">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cg2-he-TZQ" firstAttribute="leading" secondItem="7eU-jK-fo7" secondAttribute="leading" id="KKn-ml-TWv"/>
+                            <constraint firstItem="kDn-dd-qRs" firstAttribute="top" secondItem="cg2-he-TZQ" secondAttribute="bottom" id="Kuc-ab-SL0"/>
+                            <constraint firstItem="cg2-he-TZQ" firstAttribute="top" secondItem="V2p-bg-DDD" secondAttribute="bottom" id="dcv-kH-m1w"/>
+                            <constraint firstAttribute="trailing" secondItem="cg2-he-TZQ" secondAttribute="trailing" id="kR1-bo-U9Z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="kuk-4r-1qC"/>
+                    <connections>
+                        <outlet property="eventsTableView" destination="cg2-he-TZQ" id="aMs-4i-LYe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfr-6S-7KZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

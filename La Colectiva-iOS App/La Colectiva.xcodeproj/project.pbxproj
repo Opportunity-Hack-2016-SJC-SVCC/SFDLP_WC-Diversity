@@ -14,6 +14,9 @@
 		05095EF01D9725EB003673C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05095EEE1D9725EB003673C1 /* LaunchScreen.storyboard */; };
 		05095EFB1D9725EB003673C1 /* La_ColectivaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095EFA1D9725EB003673C1 /* La_ColectivaTests.swift */; };
 		05095F061D9725EB003673C1 /* La_ColectivaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F051D9725EB003673C1 /* La_ColectivaUITests.swift */; };
+		05095F161D97402C003673C1 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F151D97402C003673C1 /* EventsViewController.swift */; };
+		05095F1A1D97429B003673C1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F191D97429B003673C1 /* Event.swift */; };
+		05095F1C1D974561003673C1 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F1B1D974561003673C1 /* TestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		05095F071D9725EB003673C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05095F131D97300E003673C1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		05095F141D97300E003673C1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		05095F151D97402C003673C1 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		05095F191D97429B003673C1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		05095F1B1D974561003673C1 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,9 @@
 		05095EE41D9725EB003673C1 /* La Colectiva */ = {
 			isa = PBXGroup;
 			children = (
+				05095F181D974066003673C1 /* Models */,
+				05095F171D974054003673C1 /* ViewControllers */,
 				05095EE51D9725EB003673C1 /* AppDelegate.swift */,
-				05095EE71D9725EB003673C1 /* ViewController.swift */,
 				05095EE91D9725EB003673C1 /* Main.storyboard */,
 				05095EEC1D9725EB003673C1 /* Assets.xcassets */,
 				05095EEE1D9725EB003673C1 /* LaunchScreen.storyboard */,
@@ -125,6 +132,24 @@
 				05095F071D9725EB003673C1 /* Info.plist */,
 			);
 			path = "La ColectivaUITests";
+			sourceTree = "<group>";
+		};
+		05095F171D974054003673C1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05095EE71D9725EB003673C1 /* ViewController.swift */,
+				05095F1B1D974561003673C1 /* TestTableViewController.swift */,
+				05095F151D97402C003673C1 /* EventsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		05095F181D974066003673C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05095F191D97429B003673C1 /* Event.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05095F1A1D97429B003673C1 /* Event.swift in Sources */,
+				05095F1C1D974561003673C1 /* TestTableViewController.swift in Sources */,
 				05095EE81D9725EB003673C1 /* ViewController.swift in Sources */,
 				05095EE61D9725EB003673C1 /* AppDelegate.swift in Sources */,
+				05095F161D97402C003673C1 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +537,7 @@
 				05095F0C1D9725EB003673C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05095F0D1D9725EB003673C1 /* Build configuration list for PBXNativeTarget "La ColectivaTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +546,7 @@
 				05095F0F1D9725EB003673C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05095F101D9725EB003673C1 /* Build configuration list for PBXNativeTarget "La ColectivaUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +555,7 @@
 				05095F121D9725EB003673C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

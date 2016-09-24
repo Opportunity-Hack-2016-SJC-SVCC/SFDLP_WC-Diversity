@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "La Colectiva"; ObjectID = "fuV-6V-COI"; */
+"fuV-6V-COI.text" = "La Colectiva";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "r2l-qx-7O6"; */
+"r2l-qx-7O6.normalTitle" = "Regístrate";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "yPb-61-O1Z"; */
+"yPb-61-O1Z.normalTitle" = "Iniciar sesión";

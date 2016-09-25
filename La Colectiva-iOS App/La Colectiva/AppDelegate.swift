@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enable = true
         UIApplication.shared.isStatusBarHidden = true
+        UIView.appearance().tintColor = UIColor(colorLiteralRed: 117/255.0, green: 19/255.0, blue: 191/255.0, alpha: 1.0)
         return true
     }
 

@@ -5,22 +5,30 @@ const Event = require('../models/Event');
 
 
 exports.getEvents = (req, res) => {
-  res.render('account/profile', {
-    title: 'Account Management'
-  });
+return Event.find(function (err, events) {
+    	if (!err) {
+      		return res.send(events);
+    	} else {
+      		return console.log(err);
+    	}
+    	});
 };
 
 exports.postEvent = (req, res, next) => {
 
   const event = new Event({
-    email: req.body.name,
-    password: req.body.detail
+    name: req.body.name,
+    detail: req.body.detail
   });
 
   
     event.save((err) => {
       if (err) { return next(err); }
-      
+      else {
+      	return console.log("created");
+      }
     });
+    return res.send(event);
+
   
 };

@@ -21,6 +21,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.eventsTableView.delegate = self
         self.eventsTableView.dataSource = self
         // Do any additional setup after loading the view.
+        self.eventsTableView.tableFooterView = UIView(frame: CGRect.zero)
+
         
     }
 

@@ -1,174 +1,116 @@
-
 /* Class = "UIViewController"; title = "Sign Up"; ObjectID = "0Cy-5p-9jU"; */
-"0Cy-5p-9jU.title" = "Sign Up";
-
+"0Cy-5p-9jU.title" = "Regístrate";
 /* Class = "UILabel"; text = "Password"; ObjectID = "0D6-E6-2sB"; */
-"0D6-E6-2sB.text" = "Password";
-
+"0D6-E6-2sB.text" = "Contraseña";
 /* Class = "UILabel"; text = "JobName"; ObjectID = "1SW-HV-Y8y"; */
-"1SW-HV-Y8y.text" = "JobName";
-
+"1SW-HV-Y8y.text" = "Nombre del trabajo";
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "5hL-dI-FaW"; */
-"5hL-dI-FaW.normalTitle" = "Next";
-
+"5hL-dI-FaW.normalTitle" = "Siguiente";
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "8eV-en-JOC"; */
-"8eV-en-JOC.normalTitle" = "Back";
-
+"8eV-en-JOC.normalTitle" = "Espalda";
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "A8T-T6-o0H"; */
-"A8T-T6-o0H.normalTitle" = "Back";
-
+"A8T-T6-o0H.normalTitle" = "Espalda";
 /* Class = "UINavigationItem"; title = "Profile"; ObjectID = "Az1-Jq-KEk"; */
-"Az1-Jq-KEk.title" = "Profile";
-
+"Az1-Jq-KEk.title" = "Perfil";
 /* Class = "UILabel"; text = "Name"; ObjectID = "BD0-O4-M8g"; */
-"BD0-O4-M8g.text" = "Name";
-
+"BD0-O4-M8g.text" = "Nombre";
 /* Class = "UILabel"; text = "Day Labor Program"; ObjectID = "BMN-1o-Ofi"; */
-"BMN-1o-Ofi.text" = "Day Labor Program";
-
+"BMN-1o-Ofi.text" = "Programa de Jornaleros";
 /* Class = "UILabel"; text = "Last Job Date: Sep 20, 2016"; ObjectID = "Clv-aL-Jjg"; */
-"Clv-aL-Jjg.text" = "Last Job Date: Sep 20, 2016";
-
+"Clv-aL-Jjg.text" = "Última fecha de empleo: 20-sep el año 2016";
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "DQ0-pI-qrm"; */
-"DQ0-pI-qrm.normalTitle" = "Back";
-
+"DQ0-pI-qrm.normalTitle" = "Espalda";
 /* Class = "UILabel"; text = "Do you have any \nspecialized skills?"; ObjectID = "EbF-22-VI0"; */
-"EbF-22-VI0.text" = "Do you have any \nspecialized skills?";
-
+"EbF-22-VI0.text" = "Usted tiene alguna \n habilidades especializadas?";
 /* Class = "UITabBarItem"; title = "Events"; ObjectID = "Enr-vt-gwz"; */
-"Enr-vt-gwz.title" = "Events";
-
+"Enr-vt-gwz.title" = "Eventos";
 /* Class = "UILabel"; text = "Email"; ObjectID = "Eq3-WP-VhH"; */
 "Eq3-WP-VhH.text" = "Email";
-
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "FR0-gy-fov"; */
-"FR0-gy-fov.normalTitle" = "Next";
-
+"FR0-gy-fov.normalTitle" = "Siguiente";
 /* Class = "UIViewController"; title = "Events"; ObjectID = "G58-Yl-hqB"; */
-"G58-Yl-hqB.title" = "Events";
-
+"G58-Yl-hqB.title" = "Eventos";
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "GDW-EZ-VzN"; */
-"GDW-EZ-VzN.normalTitle" = "Back";
-
+"GDW-EZ-VzN.normalTitle" = "Espalda";
 /* Class = "UILabel"; text = "Do you have any \nspecialized skills?"; ObjectID = "I9E-UB-sPR"; */
-"I9E-UB-sPR.text" = "Do you have any \nspecialized skills?";
-
+"I9E-UB-sPR.text" = "Usted tiene alguna \n habilidades especializadas?";
 /* Class = "UILabel"; text = "Monthly Subcription ($2.00)"; ObjectID = "Ie9-rl-op9"; */
-"Ie9-rl-op9.text" = "Monthly Subcription ($2.00)";
-
+"Ie9-rl-op9.text" = "Suscripción mensual ($ 2.00)";
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "K4W-wE-v1t"; */
-"K4W-wE-v1t.normalTitle" = "Login";
-
+"K4W-wE-v1t.normalTitle" = "Iniciar sesión";
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "KCj-Dv-Ujz"; */
-"KCj-Dv-Ujz.normalTitle" = "Back";
-
+"KCj-Dv-Ujz.normalTitle" = "Espalda";
 /* Class = "UILabel"; text = "JobUserName"; ObjectID = "KbQ-cB-ssB"; */
 "KbQ-cB-ssB.text" = "JobUserName";
-
 /* Class = "UIViewController"; title = "Sign Up"; ObjectID = "L0t-iM-2xd"; */
-"L0t-iM-2xd.title" = "Sign Up";
-
+"L0t-iM-2xd.title" = "Regístrate";
 /* Class = "UILabel"; text = "Which program are you interested in?"; ObjectID = "Luc-aF-A5E"; */
-"Luc-aF-A5E.text" = "Which program are you interested in?";
-
+"Luc-aF-A5E.text" = "¿Qué programa está interesado?";
 /* Class = "UILabel"; text = "Last Check-in: Sep 23, 2016 8:00AM PST"; ObjectID = "NNJ-15-Imy"; */
-"NNJ-15-Imy.text" = "Last Check-in: Sep 23, 2016 8:00AM PST";
-
+"NNJ-15-Imy.text" = "Última Entrada: 23-sep 08 a.m. PST el año 2016";
 /* Class = "UINavigationController"; title = "Home"; ObjectID = "NPL-zx-TEW"; */
-"NPL-zx-TEW.title" = "Home";
-
+"NPL-zx-TEW.title" = "Casa";
 /* Class = "UILabel"; text = "Monthly Subcription ($2.00)"; ObjectID = "ODR-7s-ujv"; */
-"ODR-7s-ujv.text" = "Monthly Subcription ($2.00)";
-
+"ODR-7s-ujv.text" = "Suscripción mensual ($ 2.00)";
 /* Class = "UILabel"; text = "EventName"; ObjectID = "QSg-27-9hl"; */
-"QSg-27-9hl.text" = "EventName";
-
+"QSg-27-9hl.text" = "Nombre del evento";
 /* Class = "UIViewController"; title = "Profile"; ObjectID = "Qto-KO-9OL"; */
-"Qto-KO-9OL.title" = "Profile";
-
+"Qto-KO-9OL.title" = "Perfil";
 /* Class = "UINavigationItem"; title = "Job Queue"; ObjectID = "RXe-59-uUv"; */
-"RXe-59-uUv.title" = "Job Queue";
-
+"RXe-59-uUv.title" = "Cola de trabajos";
 /* Class = "UITabBarItem"; title = "Profile"; ObjectID = "RgO-Ey-xQR"; */
-"RgO-Ey-xQR.title" = "Profile";
-
+"RgO-Ey-xQR.title" = "Perfil";
 /* Class = "UIViewController"; title = "Sign Up"; ObjectID = "UMI-cx-TeL"; */
-"UMI-cx-TeL.title" = "Sign Up";
-
+"UMI-cx-TeL.title" = "Regístrate";
 /* Class = "UIViewController"; title = "Login"; ObjectID = "Vh8-Gp-J6H"; */
 "Vh8-Gp-J6H.title" = "Login";
-
 /* Class = "UILabel"; text = "Painting"; ObjectID = "WC1-Vy-Pq0"; */
 "WC1-Vy-Pq0.text" = "Painting";
-
 /* Class = "UITabBarItem"; title = "Home"; ObjectID = "WNW-YT-e7M"; */
-"WNW-YT-e7M.title" = "Home";
-
+"WNW-YT-e7M.title" = "Casa";
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "WX6-dX-eu7"; */
-"WX6-dX-eu7.normalTitle" = "Next";
-
+"WX6-dX-eu7.normalTitle" = "Siguiente";
 /* Class = "UILabel"; text = "Flyer Distribution"; ObjectID = "XIb-vi-8K4"; */
 "XIb-vi-8K4.text" = "Flyer Distribution";
-
 /* Class = "UILabel"; text = "Home"; ObjectID = "YYn-jo-Ses"; */
-"YYn-jo-Ses.text" = "Home";
-
+"YYn-jo-Ses.text" = "Casa";
 /* Class = "UIViewController"; title = "Sign Up"; ObjectID = "aMm-iV-DQR"; */
-"aMm-iV-DQR.title" = "Sign Up";
-
+"aMm-iV-DQR.title" = "Regístrate";
 /* Class = "UILabel"; text = "Last Flyering Date: Sep 19, 2016"; ObjectID = "aiz-oo-W1Q"; */
-"aiz-oo-W1Q.text" = "Last Flyering Date: Sep 19, 2016";
-
+"aiz-oo-W1Q.text" = "Última distribución de folletos Fecha: Sep 19, el año 2016";
 /* Class = "UILabel"; text = "What is your..."; ObjectID = "csK-zc-qur"; */
-"csK-zc-qur.text" = "What is your...";
-
+"csK-zc-qur.text" = "Cual es tu...";
 /* Class = "UILabel"; text = "What would you like \nto work on?"; ObjectID = "dwT-T3-Yj3"; */
-"dwT-T3-Yj3.text" = "What would you like \nto work on?";
-
+"dwT-T3-Yj3.text" = "Qué te gustaría \n ¿para trabajar en?";
 /* Class = "UIViewController"; title = "Job Queue"; ObjectID = "e4N-Tw-uBL"; */
-"e4N-Tw-uBL.title" = "Job Queue";
-
+"e4N-Tw-uBL.title" = "Cola de trabajos";
 /* Class = "UILabel"; text = "La Colectiva"; ObjectID = "fuV-6V-COI"; */
 "fuV-6V-COI.text" = "La Colectiva";
-
 /* Class = "UILabel"; text = "Checkin"; ObjectID = "iDy-Uh-lwT"; */
-"iDy-Uh-lwT.text" = "Checkin";
-
+"iDy-Uh-lwT.text" = "Registrarse";
 /* Class = "UIViewController"; title = "Home"; ObjectID = "ktW-LH-GJy"; */
-"ktW-LH-GJy.title" = "Home";
-
+"ktW-LH-GJy.title" = "Casa";
 /* Class = "UINavigationItem"; title = "Events"; ObjectID = "kuk-4r-1qC"; */
-"kuk-4r-1qC.title" = "Events";
-
+"kuk-4r-1qC.title" = "Eventos";
 /* Class = "UIViewController"; title = "Sign Up"; ObjectID = "l51-9H-vWm"; */
-"l51-9H-vWm.title" = "Sign Up";
-
+"l51-9H-vWm.title" = "Regístrate";
 /* Class = "UILabel"; text = "Please type a brief description of your specialized skills. \nE.g., plumbing, patient care, cook, electrician, etc."; ObjectID = "lTv-EU-XkY"; */
-"lTv-EU-XkY.text" = "Please type a brief description of your specialized skills. \nE.g., plumbing, patient care, cook, electrician, etc.";
-
+"lTv-EU-XkY.text" = "Por favor, escriba una breve descripción de sus habilidades especializadas. \n Por ejemplo, la fontanería, la atención al paciente, cocinero, electricista, etc.";
 /* Class = "UILabel"; text = "Please type a brief description of your specialized skills. \nE.g., plumbing, patient care, cook, electrician, etc."; ObjectID = "nIO-5Y-1RJ"; */
-"nIO-5Y-1RJ.text" = "Please type a brief description of your specialized skills. \nE.g., plumbing, patient care, cook, electrician, etc.";
-
+"nIO-5Y-1RJ.text" = "Por favor, escriba una breve descripción de sus habilidades especializadas. \n Por ejemplo, la fontanería, la atención al paciente, cocinero, electricista, etc.";
 /* Class = "UITabBarItem"; title = "Jobs"; ObjectID = "q1z-d6-qxg"; */
-"q1z-d6-qxg.title" = "Jobs";
-
+"q1z-d6-qxg.title" = "Trabajos";
 /* Class = "UINavigationItem"; title = "Home"; ObjectID = "qsc-6n-q5N"; */
-"qsc-6n-q5N.title" = "Home";
-
+"qsc-6n-q5N.title" = "Casa";
 /* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "r2l-qx-7O6"; */
-"r2l-qx-7O6.normalTitle" = "Sign Up";
-
+"r2l-qx-7O6.normalTitle" = "Regístrate";
 /* Class = "UILabel"; text = "EventDetail"; ObjectID = "rNH-BR-y8M"; */
 "rNH-BR-y8M.text" = "EventDetail";
-
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "sQG-t6-WpZ"; */
-"sQG-t6-WpZ.normalTitle" = "Next";
-
+"sQG-t6-WpZ.normalTitle" = "Siguiente";
 /* Class = "UILabel"; text = "Name"; ObjectID = "wVs-Ph-12C"; */
-"wVs-Ph-12C.text" = "Name";
-
+"wVs-Ph-12C.text" = "Nombre";
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "xwX-9T-CAS"; */
-"xwX-9T-CAS.normalTitle" = "Next";
-
+"xwX-9T-CAS.normalTitle" = "Siguiente";
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "yPb-61-O1Z"; */
-"yPb-61-O1Z.normalTitle" = "Login";
+"yPb-61-O1Z.normalTitle" = "Iniciar sesión";

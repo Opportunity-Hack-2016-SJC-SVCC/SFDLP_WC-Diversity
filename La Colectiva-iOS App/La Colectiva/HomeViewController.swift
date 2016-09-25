@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var checkinButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
@@ -23,6 +24,9 @@ class HomeViewController: UIViewController {
     }
     
 
+    @IBAction func checkin(_ sender: AnyObject) {
+        sender.setImage(UIImage(named : "checkedinStatus"), for: .normal)
+    }
     /*
     // MARK: - Navigation
 

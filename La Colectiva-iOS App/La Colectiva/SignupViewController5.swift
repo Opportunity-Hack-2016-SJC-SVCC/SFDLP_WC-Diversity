@@ -26,7 +26,7 @@ class SignupViewController5: UIViewController {
         // Runs after 1 second on the main queue.
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2) ) {
             self.indicator.stopAnimating()
-            self.performSegue(withIdentifier: "HomeSegue", sender: self)
+            self.performSegue(withIdentifier: "DoneSignupSegue", sender: self)
         }
     }
     

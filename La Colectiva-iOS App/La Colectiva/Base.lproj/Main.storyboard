@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="intro-new" translatesAutoresizingMaskIntoConstraints="NO" id="UPr-ZK-Xj9">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="intro-new" translatesAutoresizingMaskIntoConstraints="NO" id="Qy5-ke-Sct">
                                 <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2l-qx-7O6">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -48,12 +49,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="UPr-ZK-Xj9" secondAttribute="trailing" id="6me-xR-d8J"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yPb-61-O1Z" secondAttribute="bottom" id="KMl-bN-g9i"/>
                             <constraint firstAttribute="trailing" secondItem="yPb-61-O1Z" secondAttribute="trailing" id="Muq-6b-Ecr"/>
-                            <constraint firstItem="UPr-ZK-Xj9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="SJP-rp-DsM"/>
-                            <constraint firstItem="UPr-ZK-Xj9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VV0-E7-Q7x"/>
-                            <constraint firstItem="yPb-61-O1Z" firstAttribute="top" secondItem="UPr-ZK-Xj9" secondAttribute="bottom" constant="-46" id="Yks-mA-QA6"/>
                             <constraint firstItem="r2l-qx-7O6" firstAttribute="width" secondItem="yPb-61-O1Z" secondAttribute="width" id="ael-PL-3xt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r2l-qx-7O6" secondAttribute="bottom" id="fqi-b5-TDf"/>
                             <constraint firstItem="yPb-61-O1Z" firstAttribute="leading" secondItem="r2l-qx-7O6" secondAttribute="trailing" id="kmD-GX-dHb"/>
@@ -142,7 +139,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0D6-E6-2sB">
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -200,7 +197,7 @@
                             <constraint firstItem="keg-PE-Hs6" firstAttribute="top" secondItem="0D6-E6-2sB" secondAttribute="bottom" constant="9" id="h0g-Oy-pgR"/>
                             <constraint firstItem="GbJ-U9-Gl2" firstAttribute="leading" secondItem="tEW-qs-boM" secondAttribute="leading" id="hci-Xo-y1g"/>
                             <constraint firstItem="du0-gK-Qoi" firstAttribute="leading" secondItem="tEW-qs-boM" secondAttribute="leading" id="i1q-Lg-cur"/>
-                            <constraint firstItem="wVs-Ph-12C" firstAttribute="top" secondItem="yHm-Li-bkK" secondAttribute="bottom" constant="8" id="mGv-QK-5o2"/>
+                            <constraint firstItem="wVs-Ph-12C" firstAttribute="top" secondItem="yHm-Li-bkK" secondAttribute="bottom" constant="15" id="mGv-QK-5o2"/>
                             <constraint firstAttribute="trailing" secondItem="yHm-Li-bkK" secondAttribute="trailing" id="pOf-uj-puP"/>
                             <constraint firstItem="Tcq-Pj-Qju" firstAttribute="leading" secondItem="tEW-qs-boM" secondAttribute="leading" id="pTe-bd-TmM"/>
                             <constraint firstItem="KCj-Dv-Ujz" firstAttribute="leading" secondItem="tEW-qs-boM" secondAttribute="leading" id="qzx-mH-JoT"/>
@@ -216,6 +213,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="KCj-Dv-Ujz" id="9qP-0W-yqY"/>
+                        <outlet property="nameTextField" destination="XSm-KI-nZN" id="0fv-xh-a3J"/>
                         <outlet property="nextButton" destination="sQG-t6-WpZ" id="gpQ-73-2yS"/>
                     </connections>
                 </viewController>
@@ -945,7 +943,7 @@ to work on?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Pb-eI-XL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3903" y="-928"/>
+            <point key="canvasLocation" x="3966" y="-717"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="bK9-Zx-8Oh">
@@ -1070,11 +1068,48 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
                     <connections>
                         <outlet property="indicator" destination="PTY-QB-FCD" id="v8f-Qj-CWN"/>
                         <segue destination="ICe-JE-LlH" kind="presentation" identifier="HomeSegue" id="0El-w1-QFs"/>
+                        <segue destination="aLd-DD-Bie" kind="show" identifier="DoneSignupSegue" id="x16-hM-rwd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oh-dt-T1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3465" y="75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sbF-fe-Ckh">
+            <objects>
+                <viewController id="aLd-DD-Bie" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NEk-Wz-LkE"/>
+                        <viewControllerLayoutGuide type="bottom" id="kgV-qh-qVS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="crH-Wk-Mxj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup_success" translatesAutoresizingMaskIntoConstraints="NO" id="wII-A2-Yds"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-HC-vwI">
+                                <connections>
+                                    <segue destination="ICe-JE-LlH" kind="presentation" id="4PD-f1-dgk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jlN-HC-vwI" firstAttribute="top" secondItem="NEk-Wz-LkE" secondAttribute="bottom" constant="554" id="0CV-bS-r2X"/>
+                            <constraint firstAttribute="trailing" secondItem="wII-A2-Yds" secondAttribute="trailing" id="HQG-41-1sB"/>
+                            <constraint firstItem="wII-A2-Yds" firstAttribute="top" secondItem="NEk-Wz-LkE" secondAttribute="bottom" id="Olr-He-frw"/>
+                            <constraint firstItem="kgV-qh-qVS" firstAttribute="top" secondItem="jlN-HC-vwI" secondAttribute="bottom" constant="45" id="dFw-wp-DAn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jlN-HC-vwI" secondAttribute="trailing" constant="24" id="hZ6-dh-1tP"/>
+                            <constraint firstItem="jlN-HC-vwI" firstAttribute="leading" secondItem="crH-Wk-Mxj" secondAttribute="leadingMargin" constant="16" id="nLE-7r-nEc"/>
+                            <constraint firstItem="kgV-qh-qVS" firstAttribute="top" secondItem="wII-A2-Yds" secondAttribute="bottom" id="rRX-1I-JCN"/>
+                            <constraint firstItem="wII-A2-Yds" firstAttribute="leading" secondItem="crH-Wk-Mxj" secondAttribute="leading" id="s2r-uk-u1U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAG-G1-ZMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2381.5999999999999" y="103.89805097451276"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="5tK-fN-3X0">
@@ -1197,6 +1232,7 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
         <image name="main-alerts" width="375" height="667"/>
         <image name="paidStatus" width="79" height="32"/>
         <image name="profile" width="187" height="333"/>
+        <image name="signup_success" width="375" height="667"/>
         <image name="tab_alerts" width="25" height="25"/>
         <image name="tab_events" width="25" height="25"/>
         <image name="tab_home" width="25" height="25"/>
@@ -1204,7 +1240,7 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
         <image name="tab_profile" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0El-w1-QFs"/>
+        <segue reference="4PD-f1-dgk"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.45882352939999999" green="0.074509803920000006" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

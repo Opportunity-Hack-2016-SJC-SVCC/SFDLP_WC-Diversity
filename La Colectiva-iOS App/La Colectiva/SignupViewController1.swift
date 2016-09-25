@@ -12,6 +12,7 @@ class SignupViewController1: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class SignupViewController1: UIViewController {
         backButton.layer.borderColor = UIColor(red: 223/255.0, green: 223/255.0, blue: 223/255.0, alpha: 1.0).cgColor
         // Do any additional setup after loading the view.
         backButton.layer.borderWidth = 1.0
+        self.nameTextField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

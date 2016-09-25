@@ -64,7 +64,6 @@
 		05095F011D9725EB003673C1 /* La ColectivaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "La ColectivaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05095F051D9725EB003673C1 /* La_ColectivaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = La_ColectivaUITests.swift; sourceTree = "<group>"; };
 		05095F071D9725EB003673C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05095F131D97300E003673C1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		05095F141D97300E003673C1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		05095F151D97402C003673C1 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		05095F191D97429B003673C1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		05DE19B61D9783CF00B1CD8E /* SignupViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController4.swift; sourceTree = "<group>"; };
 		05DE19B81D978FF600B1CD8E /* SignupViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController5.swift; sourceTree = "<group>"; };
 		05DE19BA1D9794BB00B1CD8E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		05DE19BD1D97A30600B1CD8E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		5D221649CAD4C633C6DE690E /* Pods-La Colectiva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-La Colectiva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-La Colectiva/Pods-La Colectiva.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBDFD515C9C4004BFA4A0CF /* Pods-La Colectiva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-La Colectiva.release.xcconfig"; path = "Pods/Target Support Files/Pods-La Colectiva/Pods-La Colectiva.release.xcconfig"; sourceTree = "<group>"; };
 		CDE7AE58DBC8EA6E1EE3D116 /* Pods_La_Colectiva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_La_Colectiva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,6 +324,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 05095ED91D9725EB003673C1;
 			productRefGroup = 05095EE31D9725EB003673C1 /* Products */;
@@ -474,7 +475,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				05095EEA1D9725EB003673C1 /* Base */,
-				05095F131D97300E003673C1 /* es */,
+				05DE19BD1D97A30600B1CD8E /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

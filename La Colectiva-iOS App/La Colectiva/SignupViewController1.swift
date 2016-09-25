@@ -16,13 +16,12 @@ class SignupViewController1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
-        nextButton.layer.borderColor = UIColor(red: 223/225.0, green: 223/225.0, blue: 223/225.0, alpha: 1.0).cgColor
+        nextButton.layer.borderColor = UIColor(red: 223/255.0, green: 223/255.0, blue: 223/255.0, alpha: 1.0).cgColor
         // Do any additional setup after loading the view.
         nextButton.layer.borderWidth = 1.0
-        backButton.layer.borderColor = UIColor(red: 223/225.0, green: 223/225.0, blue: 223/225.0, alpha: 1.0).cgColor
+        backButton.layer.borderColor = UIColor(red: 223/255.0, green: 223/255.0, blue: 223/255.0, alpha: 1.0).cgColor
         // Do any additional setup after loading the view.
         backButton.layer.borderWidth = 1.0
-        
     }
 
     override func didReceiveMemoryWarning() {

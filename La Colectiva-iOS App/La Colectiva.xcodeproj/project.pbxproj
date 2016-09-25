@@ -16,7 +16,11 @@
 		05095F061D9725EB003673C1 /* La_ColectivaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F051D9725EB003673C1 /* La_ColectivaUITests.swift */; };
 		05095F161D97402C003673C1 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F151D97402C003673C1 /* EventsViewController.swift */; };
 		05095F1A1D97429B003673C1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F191D97429B003673C1 /* Event.swift */; };
-		05095F1C1D974561003673C1 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F1B1D974561003673C1 /* TestTableViewController.swift */; };
+		05095F201D974776003673C1 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F1F1D974776003673C1 /* EventTableViewCell.swift */; };
+		05095F221D974B7E003673C1 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F211D974B7E003673C1 /* Job.swift */; };
+		05095F241D974BD5003673C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F231D974BD5003673C1 /* User.swift */; };
+		05095F261D974D96003673C1 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F251D974D96003673C1 /* JobsViewController.swift */; };
+		05095F281D974DC6003673C1 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05095F271D974DC6003673C1 /* JobTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +58,11 @@
 		05095F141D97300E003673C1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		05095F151D97402C003673C1 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		05095F191D97429B003673C1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		05095F1B1D974561003673C1 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		05095F1F1D974776003673C1 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		05095F211D974B7E003673C1 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		05095F231D974BD5003673C1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		05095F251D974D96003673C1 /* JobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
+		05095F271D974DC6003673C1 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 		05095EE41D9725EB003673C1 /* La Colectiva */ = {
 			isa = PBXGroup;
 			children = (
+				05095F1D1D974748003673C1 /* Views */,
 				05095F181D974066003673C1 /* Models */,
 				05095F171D974054003673C1 /* ViewControllers */,
 				05095EE51D9725EB003673C1 /* AppDelegate.swift */,
@@ -138,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				05095EE71D9725EB003673C1 /* ViewController.swift */,
-				05095F1B1D974561003673C1 /* TestTableViewController.swift */,
 				05095F151D97402C003673C1 /* EventsViewController.swift */,
+				05095F251D974D96003673C1 /* JobsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -148,8 +157,27 @@
 			isa = PBXGroup;
 			children = (
 				05095F191D97429B003673C1 /* Event.swift */,
+				05095F211D974B7E003673C1 /* Job.swift */,
+				05095F231D974BD5003673C1 /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		05095F1D1D974748003673C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05095F1E1D974753003673C1 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		05095F1E1D974753003673C1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				05095F1F1D974776003673C1 /* EventTableViewCell.swift */,
+				05095F271D974DC6003673C1 /* JobTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,11 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05095F261D974D96003673C1 /* JobsViewController.swift in Sources */,
 				05095F1A1D97429B003673C1 /* Event.swift in Sources */,
-				05095F1C1D974561003673C1 /* TestTableViewController.swift in Sources */,
+				05095F221D974B7E003673C1 /* Job.swift in Sources */,
 				05095EE81D9725EB003673C1 /* ViewController.swift in Sources */,
 				05095EE61D9725EB003673C1 /* AppDelegate.swift in Sources */,
+				05095F201D974776003673C1 /* EventTableViewCell.swift in Sources */,
+				05095F281D974DC6003673C1 /* JobTableViewCell.swift in Sources */,
 				05095F161D97402C003673C1 /* EventsViewController.swift in Sources */,
+				05095F241D974BD5003673C1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

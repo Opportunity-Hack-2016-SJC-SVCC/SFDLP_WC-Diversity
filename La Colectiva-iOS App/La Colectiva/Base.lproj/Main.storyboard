@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -229,16 +230,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-he-TZQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-he-TZQ">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fmm-NF-ZCf">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableViewCell" rowHeight="94" id="fmm-NF-ZCf" customClass="EventTableViewCell" customModule="La_Colectiva" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmm-NF-ZCf" id="3ef-jI-trb">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EventName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSg-27-9hl">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EventDetail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNH-BR-y8M">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rNH-BR-y8M" firstAttribute="leading" secondItem="QSg-27-9hl" secondAttribute="leading" id="Rcv-Yj-qll"/>
+                                                <constraint firstItem="rNH-BR-y8M" firstAttribute="top" secondItem="QSg-27-9hl" secondAttribute="bottom" constant="2" id="o1z-cE-kqu"/>
+                                                <constraint firstItem="QSg-27-9hl" firstAttribute="top" secondItem="3ef-jI-trb" secondAttribute="topMargin" constant="14" id="p6O-9a-qun"/>
+                                                <constraint firstItem="QSg-27-9hl" firstAttribute="leading" secondItem="3ef-jI-trb" secondAttribute="leadingMargin" constant="13" id="xtr-AE-tsQ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="eventDetailLabel" destination="rNH-BR-y8M" id="p2I-tn-OrL"/>
+                                            <outlet property="eventNameLabel" destination="QSg-27-9hl" id="CEr-Lk-iVI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -247,7 +270,7 @@
                         <constraints>
                             <constraint firstItem="cg2-he-TZQ" firstAttribute="leading" secondItem="7eU-jK-fo7" secondAttribute="leading" id="KKn-ml-TWv"/>
                             <constraint firstItem="kDn-dd-qRs" firstAttribute="top" secondItem="cg2-he-TZQ" secondAttribute="bottom" id="Kuc-ab-SL0"/>
-                            <constraint firstItem="cg2-he-TZQ" firstAttribute="top" secondItem="V2p-bg-DDD" secondAttribute="bottom" id="dcv-kH-m1w"/>
+                            <constraint firstItem="cg2-he-TZQ" firstAttribute="top" secondItem="V2p-bg-DDD" secondAttribute="bottom" constant="-64" id="dcv-kH-m1w"/>
                             <constraint firstAttribute="trailing" secondItem="cg2-he-TZQ" secondAttribute="trailing" id="kR1-bo-U9Z"/>
                         </constraints>
                     </view>
@@ -282,7 +305,7 @@
         <!--Job Queue-->
         <scene sceneID="52P-F4-NgW">
             <objects>
-                <viewController title="Job Queue" id="e4N-Tw-uBL" sceneMemberID="viewController">
+                <viewController title="Job Queue" id="e4N-Tw-uBL" customClass="JobsViewController" customModule="La_Colectiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ERX-1S-9qJ"/>
                         <viewControllerLayoutGuide type="bottom" id="lg5-f8-E9I"/>
@@ -290,9 +313,55 @@
                     <view key="view" contentMode="scaleToFill" id="SUo-e6-kMj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-mi-QE9">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JobTableViewCell" rowHeight="94" id="5AD-bI-FZX" customClass="JobTableViewCell" customModule="La_Colectiva" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5AD-bI-FZX" id="OYv-mL-P54">
+                                            <frame key="frameInset" width="375" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JobName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SW-HV-Y8y">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JobUserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbQ-cB-ssB">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1SW-HV-Y8y" firstAttribute="leading" secondItem="OYv-mL-P54" secondAttribute="leadingMargin" constant="13" id="1PU-cH-9id"/>
+                                                <constraint firstItem="1SW-HV-Y8y" firstAttribute="top" secondItem="OYv-mL-P54" secondAttribute="topMargin" constant="14" id="5t2-4b-m9f"/>
+                                                <constraint firstItem="KbQ-cB-ssB" firstAttribute="leading" secondItem="1SW-HV-Y8y" secondAttribute="leading" id="Kdr-EI-NMh"/>
+                                                <constraint firstItem="KbQ-cB-ssB" firstAttribute="top" secondItem="1SW-HV-Y8y" secondAttribute="bottom" constant="2" id="hES-P2-EpP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jobNameLabel" destination="1SW-HV-Y8y" id="OwQ-qm-2c6"/>
+                                            <outlet property="jobuserNameLabel" destination="KbQ-cB-ssB" id="gAe-9d-k4J"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BmS-mi-QE9" firstAttribute="leading" secondItem="SUo-e6-kMj" secondAttribute="leading" id="8QC-kT-7GV"/>
+                            <constraint firstAttribute="trailing" secondItem="BmS-mi-QE9" secondAttribute="trailing" id="Op4-jF-9yU"/>
+                            <constraint firstItem="BmS-mi-QE9" firstAttribute="top" secondItem="SUo-e6-kMj" secondAttribute="top" id="aya-ic-ykq"/>
+                            <constraint firstItem="lg5-f8-E9I" firstAttribute="top" secondItem="BmS-mi-QE9" secondAttribute="bottom" id="moT-QV-031"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Job Queue" id="RXe-59-uUv"/>
+                    <connections>
+                        <outlet property="jobsTableView" destination="BmS-mi-QE9" id="BBB-Pz-Afq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg7-ub-rWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

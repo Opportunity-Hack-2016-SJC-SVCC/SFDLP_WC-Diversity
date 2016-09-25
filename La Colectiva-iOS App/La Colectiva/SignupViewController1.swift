@@ -14,6 +14,8 @@ class SignupViewController1: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
@@ -37,6 +39,10 @@ class SignupViewController1: UIViewController {
     }
     
     
+    @IBAction func nextPage(_ sender: AnyObject) {
+        Utils.currentUser = User(name: self.nameTextField.text!, email: self.emailTextField.text!, password: self.passwordTextField.text!)
+        self.performSegue(withIdentifier: "nextSegue", sender: self)
+    }
     /*
     // MARK: - Navigation
 

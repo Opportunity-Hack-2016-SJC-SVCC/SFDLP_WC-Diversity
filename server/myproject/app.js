@@ -119,6 +119,8 @@ app.get('/reset/:token', userController.getReset);
 app.post('/reset/:token', userController.postReset);
 app.get('/signup', userController.getSignup);
 app.post('/signup', userController.postSignup);
+app.post('/register', userController.register);
+
 app.post('/event', eventController.postEvent);
 
 app.get('/contact', contactController.getContact);

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignupViewController5: UIViewController {
 
@@ -19,6 +20,7 @@ class SignupViewController5: UIViewController {
     }
     
     
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         indicator.startAnimating()
@@ -26,6 +28,12 @@ class SignupViewController5: UIViewController {
         // Runs after 1 second on the main queue.
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2) ) {
             self.indicator.stopAnimating()
+            let params = ["name" : Utils.currentUser?.name, "password" : Utils.currentUser?.password, "email" : Utils.currentUser?.email]
+            
+            Alamofire.request(Utils.apiurl, method: .post, parameters: params, encoding: URLEncoding.default)
+                .responseJSON { response in
+                    print(response.result)
+            }
             self.performSegue(withIdentifier: "DoneSignupSegue", sender: self)
         }
     }

@@ -111,6 +111,32 @@ exports.postSignup = (req, res, next) => {
   });
 };
 
+
+exports.register = (req, res, next) => {
+
+
+  const user = new User({
+    email: req.body.email,
+    name : req.body.name,
+    password: req.body.password
+  });
+
+  User.findOne({ email: req.body.email }, (err, existingUser) => {
+    if (err) { return next(err); }
+    if (existingUser) {
+      return next(err);
+    }
+    user.save((err) => {
+      if (err) { return next(err); }
+      else {
+        return console.log("created");
+      }
+    });
+    return res.send(user);
+
+  });
+};
+
 /**
  * GET /account
  * Profile page.

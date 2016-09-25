@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var eventsTableView: UITableView!
     
-    var events : [Event] = [Event(name: "TEst", detail: "Test", startDate: Date(), endDate: Date())]
+    var events : [Event] = [Event(name: "Massive Flyering 🌟", detail: "To promote Women Collective in San Francisco", startDate: Date(), endDate: Date())]
     
     
     
@@ -23,6 +24,30 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
         self.eventsTableView.tableFooterView = UIView(frame: CGRect.zero)
 
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        Alamofire.request(Utils.eventsUrl).responseJSON { response in
+            debugPrint(response)
+            
+            if let json = response.result.value {
+                print("JSON: \(json)")
+                let jsonArray = json as! NSArray
+                self.events.removeAll()
+                for event in jsonArray {
+                    let dictEvent = event as! NSDictionary
+                    let newevent = Event(name: dictEvent["name"]! as! String, detail: dictEvent["detail"]! as! String, startDate: Date(), endDate: Date())
+                    self.events.append(newevent)
+                    
+                }
+                DispatchQueue.main.async {
+                    self.eventsTableView.reloadData()
+                }
+                
+            }
+        }
         
     }
 

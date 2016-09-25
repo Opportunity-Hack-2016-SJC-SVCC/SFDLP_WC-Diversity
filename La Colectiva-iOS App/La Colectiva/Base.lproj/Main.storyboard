@@ -170,7 +170,7 @@
                                     <color key="titleColor" red="0.45882352939999999" green="0.074509803920000006" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0Cy-5p-9jU" kind="show" id="iFd-hW-8ir"/>
+                                    <action selector="nextPage:" destination="aMm-iV-DQR" eventType="touchUpInside" id="nP5-2h-sux"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -213,13 +213,16 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="KCj-Dv-Ujz" id="9qP-0W-yqY"/>
+                        <outlet property="emailTextField" destination="bk7-yj-toz" id="yIO-dI-Uuz"/>
                         <outlet property="nameTextField" destination="XSm-KI-nZN" id="0fv-xh-a3J"/>
                         <outlet property="nextButton" destination="sQG-t6-WpZ" id="gpQ-73-2yS"/>
+                        <outlet property="passwordTextField" destination="keg-PE-Hs6" id="G0v-jB-y8P"/>
+                        <segue destination="0Cy-5p-9jU" kind="show" identifier="nextSegue" id="BcF-4X-kam"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIu-cL-mQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1975" y="-1003"/>
+            <point key="canvasLocation" x="1783" y="-1018"/>
         </scene>
         <!--Home-->
         <scene sceneID="oEH-UR-t2F">
@@ -460,7 +463,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableViewCell" rowHeight="94" id="fmm-NF-ZCf" customClass="EventTableViewCell" customModule="La_Colectiva" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="94"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmm-NF-ZCf" id="3ef-jI-trb">
                                             <frame key="frameInset" width="375" height="93"/>
@@ -499,13 +502,29 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-9g-i0a">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lI7-9R-RqP">
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="1Yr-JP-3UV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lI7-9R-RqP" secondAttribute="trailing" constant="11" id="0ut-V3-O9E"/>
+                            <constraint firstItem="lI7-9R-RqP" firstAttribute="leading" secondItem="7eU-jK-fo7" secondAttribute="leading" constant="9" id="8Uy-gq-i09"/>
                             <constraint firstItem="cg2-he-TZQ" firstAttribute="leading" secondItem="7eU-jK-fo7" secondAttribute="leading" id="KKn-ml-TWv"/>
                             <constraint firstItem="kDn-dd-qRs" firstAttribute="top" secondItem="cg2-he-TZQ" secondAttribute="bottom" id="Kuc-ab-SL0"/>
-                            <constraint firstItem="cg2-he-TZQ" firstAttribute="top" secondItem="V2p-bg-DDD" secondAttribute="bottom" constant="-64" id="dcv-kH-m1w"/>
+                            <constraint firstItem="6BK-9g-i0a" firstAttribute="leading" secondItem="7eU-jK-fo7" secondAttribute="leadingMargin" constant="-1" id="Mxj-2u-CJD"/>
+                            <constraint firstItem="lI7-9R-RqP" firstAttribute="top" secondItem="6BK-9g-i0a" secondAttribute="bottom" constant="21" id="X1Z-OF-lr8"/>
+                            <constraint firstItem="cg2-he-TZQ" firstAttribute="top" secondItem="V2p-bg-DDD" secondAttribute="bottom" constant="100" id="dcv-kH-m1w"/>
                             <constraint firstAttribute="trailing" secondItem="cg2-he-TZQ" secondAttribute="trailing" id="kR1-bo-U9Z"/>
+                            <constraint firstItem="6BK-9g-i0a" firstAttribute="top" secondItem="V2p-bg-DDD" secondAttribute="bottom" constant="6" id="yz3-Xv-WGd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="kuk-4r-1qC"/>
@@ -520,7 +539,7 @@
         <!--Events-->
         <scene sceneID="afE-L0-WpH">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d8b-J8-hF1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="d8b-J8-hF1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="tab_events" id="Enr-vt-gwz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uSQ-Ka-Jt9">
@@ -1196,7 +1215,7 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Jo-M7-XnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4733.6000000000004" y="-928.78560719640188"/>
+            <point key="canvasLocation" x="4958" y="-1003"/>
         </scene>
         <!--Alert-->
         <scene sceneID="wm3-8J-dT2">

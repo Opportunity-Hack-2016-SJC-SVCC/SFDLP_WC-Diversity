@@ -626,12 +626,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="AfA-D7-eRT"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFX-EH-3V0">
+                                <connections>
+                                    <segue destination="OhI-Vb-92P" kind="show" id="7bc-BM-YDc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AfA-D7-eRT" firstAttribute="top" secondItem="CN0-gI-BjC" secondAttribute="bottom" id="1Q1-X4-Zu5"/>
+                            <constraint firstItem="FFX-EH-3V0" firstAttribute="leading" secondItem="mmS-hy-dDc" secondAttribute="leadingMargin" id="2sw-aN-860"/>
                             <constraint firstItem="AfA-D7-eRT" firstAttribute="leading" secondItem="mmS-hy-dDc" secondAttribute="leading" id="5ne-Jb-wMK"/>
                             <constraint firstAttribute="trailing" secondItem="AfA-D7-eRT" secondAttribute="trailing" id="OOf-75-c93"/>
+                            <constraint firstItem="qdG-nL-dtX" firstAttribute="top" secondItem="FFX-EH-3V0" secondAttribute="bottom" constant="138" id="eAt-0C-uQF"/>
+                            <constraint firstItem="FFX-EH-3V0" firstAttribute="centerX" secondItem="AfA-D7-eRT" secondAttribute="centerX" id="gtg-do-NJ0"/>
+                            <constraint firstItem="FFX-EH-3V0" firstAttribute="top" secondItem="CN0-gI-BjC" secondAttribute="bottom" constant="416" id="omO-Ol-h9G"/>
                             <constraint firstItem="qdG-nL-dtX" firstAttribute="top" secondItem="AfA-D7-eRT" secondAttribute="bottom" id="zPu-dS-fju"/>
                         </constraints>
                     </view>
@@ -639,7 +648,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPp-2C-cxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4916" y="3072"/>
+            <point key="canvasLocation" x="4916" y="3071.5142428785612"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="lhe-tF-Miy">
+            <objects>
+                <viewController id="OhI-Vb-92P" customClass="HistoryViewController" customModule="La_Colectiva" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L0O-m0-ctD"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdk-zd-qdj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FBO-0d-1ev">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="history" translatesAutoresizingMaskIntoConstraints="NO" id="ENy-SQ-gxH"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-4S-7pS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="HZK-78-SP3"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="goBackFromView:" destination="OhI-Vb-92P" eventType="touchUpInside" id="gPK-JH-trE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ENy-SQ-gxH" firstAttribute="leading" secondItem="FBO-0d-1ev" secondAttribute="leading" id="Nuo-49-Jmw"/>
+                            <constraint firstItem="OcZ-4S-7pS" firstAttribute="leading" secondItem="FBO-0d-1ev" secondAttribute="leadingMargin" id="OSS-O7-9wd"/>
+                            <constraint firstItem="ENy-SQ-gxH" firstAttribute="top" secondItem="L0O-m0-ctD" secondAttribute="bottom" id="OgC-Bi-4p5"/>
+                            <constraint firstItem="OcZ-4S-7pS" firstAttribute="top" secondItem="L0O-m0-ctD" secondAttribute="bottom" constant="23" id="S6n-40-PPx"/>
+                            <constraint firstItem="xdk-zd-qdj" firstAttribute="top" secondItem="ENy-SQ-gxH" secondAttribute="bottom" id="h26-PI-Jwl"/>
+                            <constraint firstItem="xdk-zd-qdj" firstAttribute="top" secondItem="OcZ-4S-7pS" secondAttribute="bottom" constant="547" id="lif-No-h8D"/>
+                            <constraint firstAttribute="trailing" secondItem="ENy-SQ-gxH" secondAttribute="trailing" id="t3Q-Ho-E42"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goBack" destination="OcZ-4S-7pS" id="CGz-LF-ltI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkb-FQ-NQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5728.8000000000002" y="3071.5142428785612"/>
         </scene>
         <!--Profile-->
         <scene sceneID="65D-bo-7Wk">
@@ -1141,6 +1191,7 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
         <image name="alertStatus" width="178" height="32"/>
         <image name="checkIcon" width="24" height="24"/>
         <image name="checkinBtn" width="332" height="51"/>
+        <image name="history" width="375" height="667"/>
         <image name="intro-new" width="375" height="667"/>
         <image name="job_cue_screen" width="375" height="667"/>
         <image name="main-alerts" width="375" height="667"/>

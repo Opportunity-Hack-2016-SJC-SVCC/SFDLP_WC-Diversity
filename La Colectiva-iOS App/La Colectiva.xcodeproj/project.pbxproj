@@ -30,6 +30,7 @@
 		05DE19B71D9783CF00B1CD8E /* SignupViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE19B61D9783CF00B1CD8E /* SignupViewController4.swift */; };
 		05DE19B91D978FF600B1CD8E /* SignupViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE19B81D978FF600B1CD8E /* SignupViewController5.swift */; };
 		05DE19BB1D9794BB00B1CD8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE19BA1D9794BB00B1CD8E /* HomeViewController.swift */; };
+		05DE19BF1D98424400B1CD8E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE19BE1D98424400B1CD8E /* HistoryViewController.swift */; };
 		5387B65F72215BA2AE0E09EF /* Pods_La_Colectiva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE7AE58DBC8EA6E1EE3D116 /* Pods_La_Colectiva.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		05DE19B81D978FF600B1CD8E /* SignupViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController5.swift; sourceTree = "<group>"; };
 		05DE19BA1D9794BB00B1CD8E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		05DE19BD1D97A30600B1CD8E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		05DE19BE1D98424400B1CD8E /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		5D221649CAD4C633C6DE690E /* Pods-La Colectiva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-La Colectiva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-La Colectiva/Pods-La Colectiva.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBDFD515C9C4004BFA4A0CF /* Pods-La Colectiva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-La Colectiva.release.xcconfig"; path = "Pods/Target Support Files/Pods-La Colectiva/Pods-La Colectiva.release.xcconfig"; sourceTree = "<group>"; };
 		CDE7AE58DBC8EA6E1EE3D116 /* Pods_La_Colectiva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_La_Colectiva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +183,7 @@
 				05DE19B61D9783CF00B1CD8E /* SignupViewController4.swift */,
 				05DE19B81D978FF600B1CD8E /* SignupViewController5.swift */,
 				05DE19BA1D9794BB00B1CD8E /* HomeViewController.swift */,
+				05DE19BE1D98424400B1CD8E /* HistoryViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				05095F161D97402C003673C1 /* EventsViewController.swift in Sources */,
 				05DE19B91D978FF600B1CD8E /* SignupViewController5.swift in Sources */,
 				054BDDB81D9773DD00F492B0 /* WorkOptionTableViewCell.swift in Sources */,
+				05DE19BF1D98424400B1CD8E /* HistoryViewController.swift in Sources */,
 				05095F241D974BD5003673C1 /* User.swift in Sources */,
 				05DE19B71D9783CF00B1CD8E /* SignupViewController4.swift in Sources */,
 			);

@@ -623,7 +623,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="AfA-D7-eRT"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-new" translatesAutoresizingMaskIntoConstraints="NO" id="AfA-D7-eRT"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFX-EH-3V0">
                                 <connections>
                                     <segue destination="OhI-Vb-92P" kind="show" id="7bc-BM-YDc"/>
@@ -632,14 +632,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AfA-D7-eRT" firstAttribute="top" secondItem="CN0-gI-BjC" secondAttribute="bottom" id="1Q1-X4-Zu5"/>
-                            <constraint firstItem="FFX-EH-3V0" firstAttribute="leading" secondItem="mmS-hy-dDc" secondAttribute="leadingMargin" id="2sw-aN-860"/>
-                            <constraint firstItem="AfA-D7-eRT" firstAttribute="leading" secondItem="mmS-hy-dDc" secondAttribute="leading" id="5ne-Jb-wMK"/>
-                            <constraint firstAttribute="trailing" secondItem="AfA-D7-eRT" secondAttribute="trailing" id="OOf-75-c93"/>
-                            <constraint firstItem="qdG-nL-dtX" firstAttribute="top" secondItem="FFX-EH-3V0" secondAttribute="bottom" constant="138" id="eAt-0C-uQF"/>
-                            <constraint firstItem="FFX-EH-3V0" firstAttribute="centerX" secondItem="AfA-D7-eRT" secondAttribute="centerX" id="gtg-do-NJ0"/>
-                            <constraint firstItem="FFX-EH-3V0" firstAttribute="top" secondItem="CN0-gI-BjC" secondAttribute="bottom" constant="416" id="omO-Ol-h9G"/>
-                            <constraint firstItem="qdG-nL-dtX" firstAttribute="top" secondItem="AfA-D7-eRT" secondAttribute="bottom" id="zPu-dS-fju"/>
+                            <constraint firstItem="FFX-EH-3V0" firstAttribute="top" secondItem="CN0-gI-BjC" secondAttribute="bottom" constant="446" id="5pJ-uh-UAU"/>
+                            <constraint firstItem="AfA-D7-eRT" firstAttribute="top" secondItem="mmS-hy-dDc" secondAttribute="top" id="EyB-8E-mne"/>
+                            <constraint firstItem="qdG-nL-dtX" firstAttribute="top" secondItem="FFX-EH-3V0" secondAttribute="bottom" constant="108" id="TTm-5P-qvD"/>
+                            <constraint firstItem="FFX-EH-3V0" firstAttribute="leading" secondItem="mmS-hy-dDc" secondAttribute="leadingMargin" id="Xbg-h6-0Za"/>
+                            <constraint firstItem="FFX-EH-3V0" firstAttribute="trailing" secondItem="mmS-hy-dDc" secondAttribute="trailingMargin" id="vnj-72-X9m"/>
+                            <constraint firstItem="FFX-EH-3V0" firstAttribute="centerX" secondItem="AfA-D7-eRT" secondAttribute="centerX" id="yew-ZY-5eX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="Az1-Jq-KEk"/>
@@ -663,7 +661,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="history" translatesAutoresizingMaskIntoConstraints="NO" id="ENy-SQ-gxH"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-4S-7pS">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="37" id="HZK-78-SP3"/>
+                                    <constraint firstAttribute="width" constant="37" id="5VL-gR-a6q"/>
                                 </constraints>
                                 <connections>
                                     <action selector="goBackFromView:" destination="OhI-Vb-92P" eventType="touchUpInside" id="gPK-JH-trE"/>
@@ -672,13 +670,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ENy-SQ-gxH" firstAttribute="leading" secondItem="FBO-0d-1ev" secondAttribute="leading" id="Nuo-49-Jmw"/>
-                            <constraint firstItem="OcZ-4S-7pS" firstAttribute="leading" secondItem="FBO-0d-1ev" secondAttribute="leadingMargin" id="OSS-O7-9wd"/>
-                            <constraint firstItem="ENy-SQ-gxH" firstAttribute="top" secondItem="L0O-m0-ctD" secondAttribute="bottom" id="OgC-Bi-4p5"/>
-                            <constraint firstItem="OcZ-4S-7pS" firstAttribute="top" secondItem="L0O-m0-ctD" secondAttribute="bottom" constant="23" id="S6n-40-PPx"/>
-                            <constraint firstItem="xdk-zd-qdj" firstAttribute="top" secondItem="ENy-SQ-gxH" secondAttribute="bottom" id="h26-PI-Jwl"/>
-                            <constraint firstItem="xdk-zd-qdj" firstAttribute="top" secondItem="OcZ-4S-7pS" secondAttribute="bottom" constant="547" id="lif-No-h8D"/>
-                            <constraint firstAttribute="trailing" secondItem="ENy-SQ-gxH" secondAttribute="trailing" id="t3Q-Ho-E42"/>
+                            <constraint firstItem="ENy-SQ-gxH" firstAttribute="leading" secondItem="FBO-0d-1ev" secondAttribute="leading" id="Ivy-mB-Y68"/>
+                            <constraint firstItem="OcZ-4S-7pS" firstAttribute="top" secondItem="L0O-m0-ctD" secondAttribute="bottom" constant="8" symbolic="YES" id="LMX-hD-Hd2"/>
+                            <constraint firstItem="xdk-zd-qdj" firstAttribute="top" secondItem="OcZ-4S-7pS" secondAttribute="bottom" constant="562" id="Um5-hP-mul"/>
+                            <constraint firstItem="ENy-SQ-gxH" firstAttribute="top" secondItem="FBO-0d-1ev" secondAttribute="top" id="bIv-Eb-7I4"/>
+                            <constraint firstItem="OcZ-4S-7pS" firstAttribute="leading" secondItem="FBO-0d-1ev" secondAttribute="leadingMargin" id="uad-fq-5Gj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1231,7 +1227,7 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
         <image name="job_cue_screen" width="375" height="667"/>
         <image name="main-alerts" width="375" height="667"/>
         <image name="paidStatus" width="79" height="32"/>
-        <image name="profile" width="187" height="333"/>
+        <image name="profile-new" width="375" height="667"/>
         <image name="signup_success" width="375" height="667"/>
         <image name="tab_alerts" width="25" height="25"/>
         <image name="tab_events" width="25" height="25"/>

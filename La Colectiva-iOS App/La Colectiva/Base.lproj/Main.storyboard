@@ -295,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRV-Ei-SOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810" y="836"/>
+            <point key="canvasLocation" x="1652" y="940"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oYu-SG-0am">
@@ -316,7 +316,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYR-X4-OiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3022" y="1044"/>
+            <point key="canvasLocation" x="3356" y="979"/>
         </scene>
         <!--Home-->
         <scene sceneID="Xgm-48-Y97">
@@ -852,6 +852,9 @@ specialized skills?</string>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.45882352939999999" green="0.074509803920000006" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="agJ-HU-Gac" kind="show" id="Zeg-aZ-ydR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIO-5Y-1RJ">
                                 <string key="text">Please type a brief description of your specialized skills. 
@@ -891,6 +894,40 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
             </objects>
             <point key="canvasLocation" x="4733.6000000000004" y="-928.78560719640188"/>
         </scene>
+        <!--Signup View Controller5-->
+        <scene sceneID="jRx-jl-h4b">
+            <objects>
+                <viewController id="agJ-HU-Gac" customClass="SignupViewController5" customModule="La_Colectiva" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B2F-pQ-Pcp"/>
+                        <viewControllerLayoutGuide type="bottom" id="A6m-aS-t4D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rht-G7-mmS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="PTY-QB-FCD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="9Sw-F0-fCm"/>
+                                    <constraint firstAttribute="height" constant="30" id="cDB-q3-SjG"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.074509803920000006" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PTY-QB-FCD" firstAttribute="centerY" secondItem="rht-G7-mmS" secondAttribute="centerY" id="5JV-tt-adA"/>
+                            <constraint firstItem="PTY-QB-FCD" firstAttribute="centerX" secondItem="rht-G7-mmS" secondAttribute="centerX" id="Ioj-G1-eqR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="PTY-QB-FCD" id="v8f-Qj-CWN"/>
+                        <segue destination="ICe-JE-LlH" kind="presentation" identifier="HomeSegue" id="0El-w1-QFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Oh-dt-T1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="75"/>
+        </scene>
         <!--Sign Up-->
         <scene sceneID="5tK-fN-3X0">
             <objects>
@@ -912,6 +949,9 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.45882352939999999" green="0.074509803920000006" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goBack:" destination="L0t-iM-2xd" eventType="touchUpInside" id="Do3-x3-BVz"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyN-xo-hFy">
                                 <subviews>
@@ -984,4 +1024,7 @@ E.g., plumbing, patient care, cook, electrician, etc.</string>
         <image name="checkIcon" width="24" height="24"/>
         <image name="profile" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0El-w1-QFs"/>
+    </inferredMetricsTieBreakers>
 </document>

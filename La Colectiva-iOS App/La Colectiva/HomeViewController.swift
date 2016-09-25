@@ -1,5 +1,5 @@
 //
-//  SignupViewController4.swift
+//  HomeViewController.swift
 //  La Colectiva
 //
 //  Created by Vohra, Nikant on 9/24/16.
@@ -8,19 +8,12 @@
 
 import UIKit
 
-class SignupViewController4: UIViewController {
+class HomeViewController: UIViewController {
 
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
-        nextButton.layer.borderColor = UIColor(red: 223/255.0, green: 223/255.0, blue: 223/255.0, alpha: 1.0).cgColor
-        // Do any additional setup after loading the view.
-        nextButton.layer.borderWidth = 1.0
-        backButton.layer.borderColor = UIColor(red: 223/255.0, green: 223/255.0, blue: 223/255.0, alpha: 1.0).cgColor
-        // Do any additional setup after loading the view.
-        backButton.layer.borderWidth = 1.0
+
         // Do any additional setup after loading the view.
     }
 
@@ -29,9 +22,6 @@ class SignupViewController4: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goBack(_ sender: AnyObject) {
-        let _ = self.navigationController?.popViewController(animated: true)
-    }
 
     /*
     // MARK: - Navigation

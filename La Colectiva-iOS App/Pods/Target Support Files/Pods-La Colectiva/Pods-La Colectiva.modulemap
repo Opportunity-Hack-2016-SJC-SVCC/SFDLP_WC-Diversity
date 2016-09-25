@@ -1,0 +1,6 @@
+framework module Pods_La_Colectiva {
+  umbrella header "Pods-La Colectiva-umbrella.h"
+
+  export *
+  module * { export * }
+}

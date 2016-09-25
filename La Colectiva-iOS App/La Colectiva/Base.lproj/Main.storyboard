@@ -389,7 +389,7 @@
         <!--Profile-->
         <scene sceneID="7FG-Ko-lkj">
             <objects>
-                <viewController title="Profile" id="Qto-KO-9OL" sceneMemberID="viewController">
+                <viewController title="Profile" id="Qto-KO-9OL" customClass="ProfileViewController" customModule="La_Colectiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CN0-gI-BjC"/>
                         <viewControllerLayoutGuide type="bottom" id="qdG-nL-dtX"/>
@@ -397,13 +397,36 @@
                     <view key="view" contentMode="scaleToFill" id="mmS-hy-dDc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="sqZ-UA-5ai">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="drk-DL-1KQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="fYc-1H-ufU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD0-O4-M8g">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sqZ-UA-5ai" firstAttribute="top" secondItem="CN0-gI-BjC" secondAttribute="bottom" constant="64" id="70y-nn-NVj"/>
+                            <constraint firstItem="sqZ-UA-5ai" firstAttribute="centerX" secondItem="mmS-hy-dDc" secondAttribute="centerX" id="DuZ-pY-pYb"/>
+                            <constraint firstItem="BD0-O4-M8g" firstAttribute="top" secondItem="sqZ-UA-5ai" secondAttribute="bottom" constant="8" id="WaF-bw-YLT"/>
+                            <constraint firstItem="BD0-O4-M8g" firstAttribute="centerX" secondItem="sqZ-UA-5ai" secondAttribute="centerX" id="qkl-lE-txW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="Az1-Jq-KEk"/>
+                    <connections>
+                        <outlet property="nameTextLabel" destination="BD0-O4-M8g" id="Af7-Ys-JA3"/>
+                        <outlet property="profileImageView" destination="sqZ-UA-5ai" id="zNC-Vc-1XW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPp-2C-cxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5449" y="2088"/>
+            <point key="canvasLocation" x="5448.8000000000002" y="2087.4062968515746"/>
         </scene>
         <!--Profile-->
         <scene sceneID="65D-bo-7Wk">
@@ -425,6 +448,9 @@
             <point key="canvasLocation" x="4322" y="2088"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profile" width="512" height="512"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="I9g-MS-CEC"/>
     </inferredMetricsTieBreakers>

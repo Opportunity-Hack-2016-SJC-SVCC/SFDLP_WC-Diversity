@@ -33,7 +33,6 @@ dotenv.load({ path: '.env.example' });
 const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
 const eventController = require('./controllers/event');
-
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
 
@@ -131,6 +130,7 @@ app.post('/account/password', passportConfig.isAuthenticated, userController.pos
 app.post('/account/delete', passportConfig.isAuthenticated, userController.postDeleteAccount);
 app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
 app.get('/events', eventController.getEvents);
+app.get('/event', eventController.createEvent);
 
 /**
  * API examples routes.
@@ -224,5 +224,6 @@ app.use(errorHandler());
 app.listen(app.get('port'), () => {
   console.log('%s Express server listening on port %d in %s mode.', chalk.green('✓'), app.get('port'), app.get('env'));
 });
+
 
 module.exports = app;

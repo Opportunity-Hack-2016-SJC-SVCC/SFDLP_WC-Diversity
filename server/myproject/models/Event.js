@@ -4,7 +4,12 @@ const eventSchema = new mongoose.Schema({
   name: { type: String, unique: true },
   eventStartDate: Date,
   eventEndDate : Date,
-  detail: String
+  purpose: String,
+  expDate: String,
+  ptValue: String,
+  category: String,
+  ReqtoW: Boolean
+
 }, { timestamps: true });
 
 
@@ -12,6 +17,6 @@ const eventSchema = new mongoose.Schema({
  * Helper method for validating user's password.
  */
 
-const Event = mongoose.model('Event', eventSchema);
+const Event = mongoose.model('event', eventSchema);
 module.exports = Event;
 

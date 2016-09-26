@@ -11,6 +11,8 @@
         | La Colectiva
     .collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
+        a.navbar-brand(href='/event')
+          | Events
         if !user
           li(class=(title == 'Login') ? 'active' : undefined)
             a(href='/login') Login

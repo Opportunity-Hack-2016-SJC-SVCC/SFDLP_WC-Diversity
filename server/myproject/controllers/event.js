@@ -11,14 +11,22 @@ return Event.find(function (err, events) {
     	} else {
       		return console.log(err);
     	}
-    	});
+      });
 };
-
+exports.createEvent = (req, res)=> {
+res.render('event/eventcreate', {
+    title: 'Create Event'
+  });
+  };
 exports.postEvent = (req, res, next) => {
 
   const event = new Event({
     name: req.body.name,
-    detail: req.body.detail
+    purpose: req.body.purpose,
+    category: req.body.category,
+    expDate: req.body.expDate,
+    ptvalue: req.body.ptvalue,
+    ReqtoW: req.body.ReqtoW
   });
 
   

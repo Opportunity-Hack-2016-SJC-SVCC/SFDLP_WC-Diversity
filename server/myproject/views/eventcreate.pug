@@ -1,0 +1,54 @@
+extends ../layout
+
+block content
+  .page-header
+    h3 Create an Event
+
+  form.form-horizontal(action='/event/', method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      label.col-sm-3.control-label(for='email') Name 
+      .col-sm-7
+        input.form-control(type='email', name='email', id='email', value=user.email)
+    .form-group
+      label.col-sm-3.control-label(for='name') Purpose
+      .col-sm-7
+        input.form-control(type='text', name='name', id='name', value=user.profile.name)
+    .form-group
+      label.col-sm-3.control-label Category
+      .col-sm-6
+        label.radio.col-sm-3
+          input(type='radio', checked=event.category=='V', name='gender', value='V', data-toggle='radio')
+          span V
+        label.radio.col-sm-3
+          input(type='radio', checked=event.category=='E', name='category, value='E', data-toggle='radio')
+          span E
+        label.radio.col-sm-3
+          input(type='radio', checked=event.category=='C', name='category', value='C', data-toggle='radio')
+          span C
+        label.radio.col-sm-3
+          input(type='radio', checked=event.category=='A', name='category', value='A', data-toggle='radio')
+          span A
+        label.radio.col-sm-3
+          input(type='radio', checked=event.category=='L', name='category', value='L', data-toggle='radio')
+          span L
+        label.radio.col-sm-3
+          input(type='radio', checked=event.category=='O', name='category', value='O', data-toggle='radio')
+          span O
+    .form-group
+      label.col-sm-3.control-label(for='location') Location
+      .col-sm-7
+        input.form-control(type='text', name='location', id='location', value=user.profile.location)
+    .form-group
+      label.col-sm-3.control-label(for='website') Website
+      .col-sm-7
+        input.form-control(type='text', name='website', id='website', value=user.profile.website)
+    .form-group
+      label.col-sm-3.control-label Gravatar
+      .col-sm-4
+        img(src=user.gravatar(), class='profile', width='100', height='100')
+    .form-group
+      .col-sm-offset-3.col-sm-4
+        button.btn.btn.btn-primary(type='submit')
+          i.fa.fa-pencil
+          | Update Profile
